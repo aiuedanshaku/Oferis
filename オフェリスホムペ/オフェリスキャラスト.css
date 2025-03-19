@@ -1,0 +1,127 @@
+body {
+    background-color: #25153b;
+    color: #e0d8f0;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+}
+
+.h3{
+    　color:#D3BC8E
+    }
+
+header {
+    background: #60408a;
+    padding: 1px; /* 紫の部分をさらに細く調整 */
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #e3c45e;
+    position: relative;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    background: linear-gradient(90deg, #e3c45e, #f0d27a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.character-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
+.character-story {
+    margin-left: 30px;
+    width: 60%;
+}
+
+.tempu {
+    color:#D3BC8E
+}
+
+.setumei {
+    color:#aaaaaa
+}
+
+.suuji {
+    color: #00ffff;
+}
+
+.kaminari {
+    color: #fdabfe;
+}
+
+.namae {
+    color: #ffd780;
+}
+
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #e0d8f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: 2px solid #e3c45e;
+    border-radius: 30px;
+    transition: 0.3s;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background: rgba(227, 196, 94, 0.4);
+    transition: 0.4s;
+    transform: translateX(-50%) scaleX(0);
+}
+
+.navigation a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navigation a:hover {
+    background-color: #e3c45e;
+    color: #25153b;
+} 
+
+footer {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #60408a;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+     letter-spacing: 4px;
+    border-top: 3px solid #e3c45e;
+}

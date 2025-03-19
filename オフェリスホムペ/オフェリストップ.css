@@ -1,0 +1,142 @@
+body {
+    background-color: #25153b;
+    color: #e0d8f0;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    background: #60408a;
+    padding: 1px; /* 紫の部分をさらに細く調整 */
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #e3c45e;
+    position: relative;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    background: linear-gradient(90deg, #e3c45e, #f0d27a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.character-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.character-image {
+    width: 400px;
+    height: auto;
+    border: 2px solid #e3c45e;
+    border-radius: 15px;
+    padding: 10px;
+    background: linear-gradient(145deg, #60408a, #9a5ed3);
+    position: relative;
+}
+
+.noline {
+    　text-decoration:none;
+    color: #e0d8f0;
+    }
+
+.character-info {
+    margin-left: 30px;
+    width: 60%;
+}
+
+.character-info table {
+    border-collapse: collapse;
+    font-size: 20px;
+    color: #e0d8f0;
+    background: rgba(37, 21, 59, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    border: 3px solid #e3c45e;
+}
+
+.character-info th, .character-info td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+.character-info th {
+    background: #e3c45e;
+    color: #25153b;
+    font-size: 22px;
+}
+
+.character-info td:first-child {
+    font-weight: bold;
+    color: #f0d27a;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #e0d8f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: 2px solid #e3c45e;
+    border-radius: 30px;
+    transition: 0.3s;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background: rgba(227, 196, 94, 0.4);
+    transition: 0.4s;
+    transform: translateX(-50%) scaleX(0);
+}
+
+.navigation a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navigation a:hover {
+    background-color: #e3c45e;
+    color: #25153b;
+} 
+
+footer {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #60408a;
+    font-size: 16px;
+    font-weight: bold;
+     letter-spacing: 4px;
+    border-top: 3px solid #e3c45e;
+}
